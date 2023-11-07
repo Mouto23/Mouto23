@@ -14,11 +14,13 @@ body{
    width: 100%;
    margin: 0;
    overflow-x: hidden;
-   background-image: url('https://images.unsplash.com/photo-1484156818044-c040038b0719?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
    background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center top;
     background-attachment: fixed; 
+    background-image: url('https://images.unsplash.com/photo-1484156818044-c040038b0719?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'), linear-gradient(124deg, rgba(21,28,28,1) 0%, rgba(162,125,47,1) 100%)41; /* W3C */
+
+
    }
    
 
@@ -122,16 +124,6 @@ body{
 }
 
 
-.box{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px;
-    margin: 0 8PX;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
 
 .link{
     color: #000;
@@ -149,14 +141,18 @@ body{
     
  }
  .cards{
-    display: block;
+    display: flex;
     width: 100%;
     gap: 16px;
     flex-direction: column;
     
-    }
+}
     
-    
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
  
  .card img{
     display: flex;
@@ -174,12 +170,11 @@ body{
     width: auto;
     height: 100px;
     gap: 8px;
-    overflow: hidden;
     align-items: stretch;
     justify-content: space-between;
     align-content: space-between;
     flex-direction: row;
-    flex-wrap: nowrap;
+    white-space: nowrap;
     padding: 8px;
     margin: auto;
     
@@ -188,10 +183,15 @@ body{
     max-width: 100%;
     height: auto;
     margin-right: 20px;
-    overflow: scroll;
+    display: inline-block;
   }
 
- .footer{
+ footer{
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 8PX;
+    flex-direction: row;
+    flex-wrap: nowrap
  }
