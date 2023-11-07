@@ -170,6 +170,7 @@ body{
     width: auto;
     height: 100px;
     gap: 8px;
+    overflow: auto;
     align-items: stretch;
     justify-content: space-between;
     align-content: space-between;
