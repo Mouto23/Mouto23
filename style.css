@@ -3,154 +3,190 @@
 html,
 body {
   font-family: 'Poppins', 'sans-serif';
+  color: #FFF;
 }
 
-img{
-  width: 100px;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-}
-.navbar{  
-  nav ul{
-    padding:0px;
-    margin:0px;
-    border-top:2px dotted #8A343D;
-    border-bottom:2px dotted #8A343D;
-    padding-top:4px;
-    padding-bottom:4px;
-    overflow:hidden;
-  }
-  nav li{
-    list-style-type:none;
-    float:left;
-    text-align:center;
-  white-space: nowrap;
-          width:25%; /* J'ai supprimé ceci plus tard */
-  }
-  
-}
-h1,
-h2 {
-  font-weight: 500;
-  text-transform: uppercase;
+body{
+    display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 32px;
+   width: 100%;
+   margin: 0;
+   overflow-x: hidden;
+   background-image: url('https://images.unsplash.com/photo-1484156818044-c040038b0719?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+   background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed; 
+   }
+   
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid 2px #FFF;
 }
 
-a {
-  text-decoration: none;
+.navbar{
+    gap: 16px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    text-decoration: none;
+
+}
+.navbar a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navbar .listes{
+    display: flex;
+    margin: 0 8px;
+    gap: 32px;
+    justify-content: space-between;
+   
 }
 
 .buttons-container {
-  display: flex;
-  gap: 16px;
-}
-
-.button-primary {
-  font-weight: 500;
-  text-transform: capitalize;
-  text-align: center;
-  border-radius: 8px;
-  padding: 8px 16px;
-  transition: all .3s ease;
-}
-
-
-.Réservez {
-  background-color: #8005F2;
-  color: #FFF;
-  border: 2px solid #8005F2;
-  /*
-  background: rgb(181,105,252);
-  background: linear-gradient(90deg, rgba(181,105,252,1) 0%, rgba(128,5,242,1) 36%, rgba(181,105,252,1) 100%);*display: ;*/
-}
-
-.Reservez:hover {
-  background-color: #B569FC;
-  border: 2px solid #B569FC;
-}
-
-.commandez {
-  background-color: transparent;
-  color: #8005F2;
-  border: 2px solid #8005F2;
-}
-
-.Commandez:hover {
-  border: 2px solid #B569FC;
-  color: #B569FC;
-}
-
-.link {
-  color: #000;
-  font-weight: 500;
-  transition: all .3s ease;
-}
-
-.link:hover {
-  color: #8005F2;
-}
-
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.card{
-  border-radius: 32px;
-  width: 20vw;
-  max-width: 20vw;
-  min-width: 10vw;
-  height: 20vw;
-  min-height: 10vw;
-  max-height: 20vw;
-
-  transition: all .6s ease;
+    display: flex;
+    gap: 16px;
+   
+  }
   
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  gap: 16px;
+  .button {
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition: all .3s ease;
+    text-decoration: none;
+  }
+  
+  .button-primary{
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition: all .3s ease;
+    text-decoration: none;
+  }
+  
+  .primary {
+    background-color: #8005F2;
+    color: #FFF;
+    border: 2px solid #8005F2;
+  }
+  
+  .button-primary{
+    background-color: #8005F2;
+    color: #FFF;
+    border: 2px solid #8005F2;
+  }
+
+  .button-primary:hover {
+    background-color: #B569FC;
+    border: 2px solid #B569FC;
+  }
+  .primary:hover {
+    background-color: #B569FC;
+    border: 2px solid #B569FC;
+  }
+  
+  .secondary {
+    background-color: transparent;
+    color: #8005F2;
+    border: 2px solid #8005F2;
+  }
+  
+  .secondary:hover {
+    border: 2px solid #B569FC;
+    color: #B569FC;
+  }
+  
+.hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
 }
 
-.card i{
-  font-size: 3vw;
-  line-height: 3vw; /* Interlignage */
+  
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+ }
+ 
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
-.card:hover{
-  transform: scale(.9);
-}
 
-.Menu {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  background: azure;
-  background-image: url(https://recettes.ehtymag.com/wp-content/uploads/2023/05/poulet-braise-plat-africain.jpeg);
-  background-position: center;
-  background-size: cover;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
+.link{
+    color: #000;
+    font-weight: 500;
+ }
+ 
+ .link:hover{
+    color: #8005F2;
+ }
 
-.Restaurant h1{
-  font-size: 5vw;
-  margin: 0;
-}
-
-.Restaurant h2{
-  font-size: 2vw;
-  font-weight: 400;
-  margin: 0;
-}
+ #a-propos{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+ }
+ .cards{
+    display: block;
+    width: 100%;
+    gap: 16px;
+    flex-direction: column;
+    
+    }
+    
+    
+ 
+ .card img{
+    display: flex;
+    width: 200px;
+    height: auto;
+   
+ }
+ .text-description h3 ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+ }
+ .images{
+    display: flex;
+    width: auto;
+    height: 100px;
+    gap: 8px;
+    overflow: hidden;
+    align-items: stretch;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+ }
+ .footer{
+    display: flex;
+ }
