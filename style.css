@@ -134,7 +134,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    padding: 8px;
+    margin: 0 8PX;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 
