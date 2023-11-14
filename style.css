@@ -6,27 +6,26 @@ body {
   color: #FFF;
 }
 
+
 body{
     display: flex;
    flex-direction: column;
    justify-content: space-between;
-   gap: 32px;
    width: 100%;
    margin: 0;
    overflow-x: hidden;
    background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center top;
-    background-attachment: fixed; 
-    background-image: url('https://images.unsplash.com/photo-1484156818044-c040038b0719?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'), linear-gradient(124deg, rgba(21,28,28,1) 0%, rgba(162,125,47,1) 100%)41; /* W3C */
+    background-attachment: fixed;
+    
+    background-image: url(https://img.freepik.com/photos-gratuite/delicieux-goulache-pret-pour-diner_23-2149370908.jpg?size=626&ext=jpg&ga=GA1.1.1764620358.1698767167&semt=ais);
+}
 
-
-   }
-   
 
 .logo img{
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
     border-radius: 50%;
     border: solid 2px #FFF;
 }
@@ -52,7 +51,22 @@ body{
     justify-content: space-between;
    
 }
-
+h1{
+  font-family:"Pinyon Script" ;
+  font-weight: 900;
+  font-size: 6em;
+}
+h3{
+    font-size: 1.3em;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+h2{
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+}
 .buttons-container {
     display: flex;
     gap: 16px;
@@ -80,12 +94,15 @@ body{
   }
   
   .primary {
-    background-color: #8005F2;
+    background-color: #000;
+   /* background-color: #8005F2;*/
     color: #FFF;
-    border: 2px solid #8005F2;
+   /* border: 2px solid #8005F2;*/
+   border: 2px solid #FFF;
   }
   
   .button-primary{
+  
     background-color: #8005F2;
     color: #FFF;
     border: 2px solid #8005F2;
@@ -102,8 +119,10 @@ body{
   
   .secondary {
     background-color: transparent;
-    color: #8005F2;
-    border: 2px solid #8005F2;
+    /*color: #8005F2;*/
+    color: #000;
+    /*border: 2px solid #8005F2;*/
+    border: 2px solid white;
   }
   
   .secondary:hover {
@@ -111,7 +130,7 @@ body{
     color: #B569FC;
   }
   
-.hero{
+  .hero{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -120,9 +139,15 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
+   
+    
+   /* background: rgb(32,9,18);
+    background: linear-gradient(173deg, rgba(32,9,18,1) 0%, rgba(0,0,0,1) 100%);*/
+
+    /*background: rgb(162,125,47);
+  background: linear-gradient(180deg, rgba(162,125,47,0) 0%, rgba(162,125,47,1) 100%);*/
     
 }
-
 
 
 .link{
@@ -135,12 +160,14 @@ body{
  }
 
  #a-propos{
+  
     display: flex;
     width: 100%;
     justify-content: space-between;
     
  }
  .cards{
+    
     display: flex;
     width: 100%;
     gap: 16px;
@@ -167,24 +194,14 @@ body{
  }
  .images{
     display: flex;
-    width: auto;
-    height: 100px;
-    gap: 8px;
-    overflow: auto;
+    gap: 16px;
     align-items: stretch;
     justify-content: space-between;
-    align-content: space-between;
-    flex-direction: row;
-    white-space: nowrap;
-    padding: 8px;
-    margin: auto;
-    
- }
-  .images img{
-    max-width: 100%;
-    height: auto;
-    margin-right: 20px;
-    display: inline-block;
+    flex-wrap: wrap;
+    object-fit: cover;
+    padding: 32px;
+    border: 2px solid #000;
+  
   }
 
  footer{
@@ -192,7 +209,24 @@ body{
     align-items: flex-start;
     justify-content: space-between;
     padding: 20px;
-    margin: 0 8PX;
     flex-direction: row;
     flex-wrap: nowrap
  }
+ .fa-brands{
+  color: white;
+ }
+
+ .background-brown{
+ /* background: rgba(162,125,47,1);*/
+ 
+ background: rgb(0,0,0);
+background: linear-gradient(173deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+ }
+p{
+ text-align: center;
+}
+.deco{
+  padding-left: 0%;
+  padding-right: 0%;
+  width: auto;
+}
